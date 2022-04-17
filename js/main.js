@@ -1,3 +1,4 @@
+filterWizards() // Fill DOM on initial load
 document.getElementById('search-wizards').addEventListener('keyup', filterWizards)
 
 function filterWizards() {
