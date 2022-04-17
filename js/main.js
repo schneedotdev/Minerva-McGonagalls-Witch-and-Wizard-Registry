@@ -1,17 +1,20 @@
-const search = document.querySelector('search-wizards')
-search.addEventListener('keyup', findWizards)
+document.getElementById('search-wizards').addEventListener('keyup', filterWizards)
 
-function findWizards() {
-    const wizard = search.value;
-    const url = `https://www.dnd5eapi.co/api/spells/${wizard}`
-
-    fetch(url)
+function filterWizards() {
+    const characters = 'http://hp-api.herokuapp.com/api/characters'
+    fetch(characters)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
-            console.log(data)
+            console.log(data);
+
+            let re = new RegExp(document.getElementById('search-wizards').value.toLowerCase())
+            let matches = data.filter(wizard => wizard.name.toLowerCase().match(re) || wizard.house.toLowerCase().match(re));
+
+            console.log(matches);
         })
         .catch(err => {
-            console.log(`error ${err}`)
+            console.error(`error ${err}`)
         });
 }
+
 
