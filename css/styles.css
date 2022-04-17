@@ -5,7 +5,12 @@
 
 @font-face {
     font-family: 'Potter';
-    src: url("../fonts/HARRYP__.TTF") format("opentype");
+    src: url('../fonts/HARRYP__.TTF');
+}
+
+@font-face {
+    font-family: 'Wizarding-World';
+    src: url('../fonts/WizardWorldSimplified-Kxr7.ttf');
 }
 
 /*
@@ -19,7 +24,6 @@ html {
 body {
     background: #202124;
     color: white;
-    font-family: 'Potter';
 }
 
 /*
@@ -31,6 +35,7 @@ body {
 */
 
 #title {
+    font-family: 'Potter';
     font-size: 6rem;
     padding: 2rem 0;
 }
@@ -56,17 +61,23 @@ body {
     flex-basis: 31%;
 }
 
+.wizard-text {
+    font-family: 'Wizarding-World';
+}
+
 .image {
-    height: 12rem;
+    margin: auto 0;
+    height: 15rem;
     border-radius: .5rem;
 }
 
 .name {
-    font-size: 3rem;
+    font-family: 'Potter';
+    font-size: 3.5rem;
 }
 
 .house {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -94,9 +105,9 @@ body {
 .unknown {
     /* height: 15rem; */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     border-radius: .5rem;
     min-height: 20rem;
-    padding: 1rem;
+    padding: 3rem;
 }
