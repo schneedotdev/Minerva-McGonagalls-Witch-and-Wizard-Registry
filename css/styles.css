@@ -54,11 +54,11 @@ body {
 .wizard-info {
     margin: 1rem;
     flex-basis: 31%;
-    /* text-align: center; */
 }
 
 .image {
-    height: 10rem;
+    height: 12rem;
+    border-radius: .5rem;
 }
 
 .name {
@@ -98,4 +98,5 @@ body {
     align-items: center;
     border-radius: .5rem;
     min-height: 20rem;
+    padding: 1rem;
 }

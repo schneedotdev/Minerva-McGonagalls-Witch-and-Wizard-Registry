@@ -19,6 +19,7 @@ function filterWizards() {
             matches.forEach(match => {
                 const li = document.createElement('li');
                 const house = match.house || 'unknown';
+                const image = match.image || './images/default.png';
                 
                 li.classList.add('wizard-info');
                 li.innerHTML = `
@@ -27,7 +28,7 @@ function filterWizards() {
                             <h2 class="name">${match.name}</h2>
                             <h3 class="house">${house}</h3>
                         </div>
-                        <img class="image" src="${match.image}">
+                        <img class="image" src="${image}">
                     </section>
                 `;
 
