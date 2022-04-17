@@ -3,9 +3,24 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Potter';
+    src: url("../fonts/HARRYP__.TTF") format("opentype");
+}
+
 /*
 ================= Base Styles =================
 */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #202124;
+    color: white;
+    font-family: 'Potter';
+}
 
 /*
 ================= Layout Styles =================
@@ -14,3 +29,73 @@
 /*
 ================= Additional Styles =================
 */
+
+#title {
+    font-size: 6rem;
+    padding: 2rem 0;
+}
+
+#title,
+#form {
+    text-align: center;
+}
+
+/*
+--------------- wizards ---------------
+*/
+
+#wizards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.wizard-info {
+    margin: 1rem;
+    flex-basis: 31%;
+    /* text-align: center; */
+}
+
+.image {
+    height: 10rem;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.house {
+    font-size: 2rem;
+}
+
+
+/* Houses */
+.gryffindor {
+    background: linear-gradient(45deg, #740001, #D3A625);
+}
+.slytherin {
+    background: linear-gradient(45deg, #1A472A, #5D5D5D);
+}
+.ravenclaw {
+    background: linear-gradient(45deg, #0E1A40, #946B2D);
+}
+.hufflepuff {
+    background: linear-gradient(45deg, #FFD800, #000000);
+}
+.unknown {
+    background: linear-gradient(45deg, #FFD800, #740001, #1A472A, #0E1A40);
+}
+
+.gryffindor,
+.slytherin,
+.ravenclaw,
+.hufflepuff,
+.unknown {
+    /* height: 15rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .5rem;
+    min-height: 20rem;
+}

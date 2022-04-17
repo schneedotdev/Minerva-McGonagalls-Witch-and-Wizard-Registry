@@ -8,7 +8,30 @@ function filterWizards() {
             console.log(data);
 
             let re = new RegExp(document.getElementById('search-wizards').value.toLowerCase())
-            let matches = data.filter(wizard => wizard.name.toLowerCase().match(re) || wizard.house.toLowerCase().match(re));
+            let matches = data.filter(wizard => {
+                return wizard.name.toLowerCase().match(re) || wizard.house.toLowerCase().match(re)
+            });
+
+            const wizards = document.getElementById('wizards')
+            wizards.innerHTML = '';
+
+            matches.forEach(match => {
+                const li = document.createElement('li');
+                const house = match.house || 'unknown';
+                
+                li.classList.add('wizard-info');
+                li.innerHTML = `
+                    <section class="${house.toLowerCase()}">
+                        <div class="wizard-text">
+                            <h2 class="name">${match.name}</h2>
+                            <h3 class="house">${house}</h3>
+                        </div>
+                        <img class="image" src="${match.image}">
+                    </section>
+                `;
+
+                wizards.appendChild(li)
+            })
 
             console.log(matches);
         })
