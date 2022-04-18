@@ -26,9 +26,19 @@ function filterWizards() {
                     <section class="${house.toLowerCase()}">
                         <div class="wizard-text">
                             <h2 class="name">${match.name}</h2>
-                            <h3 class="house">${house}</h3>
+                            <h3 class="house-name">${house}</h3>
+
+                            <h4 class="wand-title">Wand Details</h4>
+                            <ul class="wand">
+                                <li>Wood - ${match.wand.wood}</li>
+                                <li>Length - ${match.wand.length}</li>
+                                <li>Core - ${match.wand.core}</li>
+                            </ul>
                         </div>
-                        <img class="image" src="${image}">
+                        <div class="wizard-image">
+                            <img class="image" src="${image}">
+                            <img class="${house.toLowerCase()}-image" src="./images/${house}.png">
+                        </div>
                     </section>
                 `;
 

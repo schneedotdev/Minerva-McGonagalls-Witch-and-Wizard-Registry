@@ -17,12 +17,41 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="title">Filter Hogwarts</h1>
+    <header id="header">
+        <div class="header-logo-container">
+            <img id="logo" src="images/hogwarts-logo.png" alt="ministry of magic logo">
+            <h3 class="motto">Draco</br>Dormeins Nunquan</br>Titillandus</h3>
+        </div>
+        <nav>
+            <ul class="header-list">
+                <li>
+                    <a href="#">
+                        <h3>Classes</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#form">
+                        <h3>Students</h3>
+                    </a>
+                </li>
+                <li class="last">
+                    <a href="#">
+                        <h3>Info</h3>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
+    
+    <section class="project-info">
+        <img id="info-logo" src="images/hogwarts-logo.png" alt="ministry of magic logo">
+        <h1 class="title">Hogwarts School of Witchcraft and Wizardry</h1>
+        <p class="info">Filter through witches and wizards that have been logged into our database.</p>
+    </section>
+    
     <form id="form">
-        <input id="search-wizards" type="text">
+        <label id="search-label" for="search">Find Wizards:</label>
+        <input id="search-wizards" name="search" type="text" placeholder="search by house or name">
     </form>
 
     <ol id="wizards"></ol>

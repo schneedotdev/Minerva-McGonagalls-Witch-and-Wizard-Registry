@@ -13,17 +13,32 @@
     src: url('../fonts/WizardWorldSimplified-Kxr7.ttf');
 }
 
+@font-face {
+    font-family: 'Bluu Next Bold';
+    src: url(../fonts/BluuNext-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Bluu Next Tilt';
+    src: url(../fonts/BluuNext-Titling.otf) format('opentype');
+}
 /*
 ================= Base Styles =================
 */
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: #202124;
+    background: #10141b;
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #fdcc18;
 }
 
 /*
@@ -34,20 +49,95 @@ body {
 ================= Additional Styles =================
 */
 
-#title {
-    font-family: 'Potter';
-    font-size: 6rem;
-    padding: 2rem 0;
+/* ------------- header ------------- */
+
+.header-logo-container {
+    display: flex;
 }
 
-#title,
-#form {
-    text-align: center;
+#header {
+    background: #242633;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 6rem;
 }
+
+#logo {
+    width: 6rem;
+}
+
+.motto {
+    color: #65656d;
+    font-size: 1.2rem;
+}
+
+.header-list {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.header-list li{
+    padding: 0 2rem;
+}
+
+.last {
+    padding-right: 0;
+}
+
+
+/* ------------- project info ------------- */
+
+.project-info {
+    background: url(../images/hogwarts.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Bluu Next Tilt';
+    text-align: center;
+    padding: 10rem 0;
+}
+
+#info-logo {
+    width: 30rem;
+}
+
+.title {
+    margin: 2rem 0 1rem 0;
+    font-size: 6rem;
+}
+
+.info {
+    font-size: 3rem;
+}
+
+#info-logo,
+.title,
+.info {
+    text-shadow: .2rem .2rem .5rem #000000;
+}
+
 
 /*
 --------------- wizards ---------------
 */
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#search-label {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+#search-wizards {
+    padding: 1rem 7rem 1rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+}
 
 #wizards {
     display: flex;
@@ -58,11 +148,21 @@ body {
 
 .wizard-info {
     margin: 1rem;
-    flex-basis: 31%;
+    flex-basis: 27%;
+
+
+    padding: .3rem;
+    /* background: linear-gradient(45deg, #946B2D 40%, rgb(208, 140, 39)); */
+    background: linear-gradient(45deg, #fc8635 40%, #fece23);
+    border-radius: .5rem;
 }
 
 .wizard-text {
     font-family: 'Wizarding-World';
+}
+
+.wizard-image {
+    position: relative;
 }
 
 .image {
@@ -71,32 +171,43 @@ body {
     border-radius: .5rem;
 }
 
+.unknown-image {
+    display: none;
+}
+
+.gryffindor-image,
+.slytherin-image,
+.hufflepuff-image,
+.ravenclaw-image {
+    position: absolute;
+    left: -1rem;
+    bottom: -1rem;
+    width: 3.5rem;
+}
+
 .name {
     font-family: 'Potter';
     font-size: 3.5rem;
+    color: white;
 }
 
-.house {
+.house-name {
     font-size: 1.5rem;
+    margin-top: .5rem;
 }
 
+/* Wand */
+.wand-title {
+    font-size: 1.3rem;
+    margin: 2rem 0 .5rem 0;
+}
+.wand-title,
+.wand {
+    font-family: 'Bluu Next Bold';
+    color: rgb(160, 160, 160);
+}
 
 /* Houses */
-.gryffindor {
-    background: linear-gradient(45deg, #740001, #D3A625);
-}
-.slytherin {
-    background: linear-gradient(45deg, #1A472A, #5D5D5D);
-}
-.ravenclaw {
-    background: linear-gradient(45deg, #0E1A40, #946B2D);
-}
-.hufflepuff {
-    background: linear-gradient(45deg, #FFD800, #000000);
-}
-.unknown {
-    background: linear-gradient(45deg, #FFD800, #740001, #1A472A, #0E1A40);
-}
 
 .gryffindor,
 .slytherin,
@@ -106,8 +217,13 @@ body {
     /* height: 15rem; */
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     border-radius: .5rem;
     min-height: 20rem;
     padding: 3rem;
+
+
+    /* border: 2px solid #946B2D; */
+    background: #10141b;
+    color: #fece23;
 }
