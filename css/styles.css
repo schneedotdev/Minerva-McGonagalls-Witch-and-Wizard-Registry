@@ -55,6 +55,7 @@ a {
     display: flex;
 }
 
+
 #header {
     background: #242633;
     display: flex;
@@ -150,9 +151,7 @@ a {
     margin: 1rem;
     flex-basis: 27%;
 
-
     padding: .3rem;
-    /* background: linear-gradient(45deg, #946B2D 40%, rgb(208, 140, 39)); */
     background: linear-gradient(45deg, #fc8635 40%, #fece23);
     border-radius: .5rem;
 }
@@ -221,9 +220,7 @@ a {
     border-radius: .5rem;
     min-height: 20rem;
     padding: 3rem;
-
-
-    /* border: 2px solid #946B2D; */
+    
     background: #10141b;
     color: #fece23;
 }
