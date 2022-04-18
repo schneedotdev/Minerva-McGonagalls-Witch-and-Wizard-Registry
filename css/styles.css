@@ -82,6 +82,10 @@ a {
     padding: 0 2rem;
 }
 
+.author {
+    color: #fc8635;
+}
+
 .last {
     padding-right: 0;
 }
@@ -223,4 +227,17 @@ a {
 
     background: #10141b;
     color: #fece23;
+}
+
+
+/*
+================= State/Action Styles =================
+*/
+
+a:hover {
+    color: #a7860d;
+}
+
+.author:hover {
+    color: #bd5916;
 }
