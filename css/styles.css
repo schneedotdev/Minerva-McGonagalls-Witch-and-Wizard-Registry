@@ -95,7 +95,7 @@ a {
     background-size: cover;
     font-family: 'Bluu Next Tilt';
     text-align: center;
-    padding: 10rem 0;
+    padding: 16rem 0;
 }
 
 #info-logo {
@@ -220,7 +220,7 @@ a {
     border-radius: .5rem;
     min-height: 20rem;
     padding: 3rem;
-    
+
     background: #10141b;
     color: #fece23;
 }
