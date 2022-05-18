@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Minerva-McGonagalls-Witch-and-Wizard-Registry</h1>
+  <h1>Minerva McGonagall's Witch and Wizard Registry</h1>
   <p>Search through Minerva McGonnagall's list of past and present Hogwarts attendees by name or the house the witch or wizard belongs to.</p>
   <p><b>Live Website:</b> https://wizarding-registry.netlify.app/</p>
 </div>
