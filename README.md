@@ -13,7 +13,7 @@
 
 **Tech used:** HTML, CSS, JavaScript
 
-I used JavaScripts Fetch API to grab Harry Potter character info from http://hp-api.herokuapp.com/api/characters. While the page is initially loaded, the DOM is filled with an array of witches and wizard's. There is a search bar with an event listener that actively filters through the array that is represented on page load. As you search character names or houses, the characters rendered to the DOM will represent your input.
+I used the Fetch API to grab Harry Potter character info from http://hp-api.herokuapp.com/api/characters. While the page is initially loaded, the DOM is filled with an array of witches and wizard's. There is a search bar with an event listener that actively filters through the array that is represented on page load. As you search character names or houses, the characters rendered to the DOM will represent your input.
 
 ## Future Optimizations:
 
